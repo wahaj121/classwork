@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            display: none;
+        }
+        .hide{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="btn">readmore</button>
+<p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, natus architecto. Nesciunt odit facilis exercitationem, impedit id reiciendis labore voluptatibus veniam, necessitatibus laudantium modi cupiditate numquam alias dolor eos porro.</p>
+<p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis enim quaerat alias veritatis. Pariatur rerum sed aut possimus tempora aperiam eveniet, alias neque earum at ullam quia totam perferendis est?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis enim quaerat alias veritatis. Pariatur rerum sed aut possimus tempora aperiam eveniet, alias neque earum at ullam quia totam perferendis est?</p>
+<p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis enim quaerat alias veritatis. Pariatur rerum sed aut possimus tempora aperiam eveniet, alias neque earum at ullam quia totam perferendis est?</p>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+$('#btn').click(function(){
+// $('#para').toggle('slow');
+// });
+// $('#btn').dblclick(function(){
+// $('#para').hide('slow');
+
+// });
+$('.hide').toggle('slow');
+});
+
+    });
+</script>

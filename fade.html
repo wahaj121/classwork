@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box,#box2,#box3,#box4{
+            /* display: ; */
+         width: 80px;
+         height: 80px;
+         margin-top: 5px;
+         background-color: aqua;
+        
+
+        }
+      
+        #box1{
+                /* display: none; */
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+                background-color:black ;
+                color: #fefefe;
+                border-radius: 20px;
+                overflow: hidden;
+                margin-left: 530px;
+                margin-top: 50px;
+            }
+            .blue{
+                color: blue;
+                font-style: oblique;
+                font-weight: lighter;
+                margin-top: 20px;
+            }
+            .blue1{
+                color: blue;
+                margin-top: 40px;
+                font-style: oblique;
+                font-weight: lighter;
+            }
+            .blue2{
+                color: blue;
+                margin-top: 40px;
+                font-style: oblique;
+                font-weight: lighter;
+            }
+
+    </style>
+</head>
+<body>
+    <button id="fadein">fadein</button>
+    
+
+        <div id="box1 clue">
+            <h3 class="blue"> Address:</h3>
+                    <p>Nagan Chorangi Sec 11-E Mulim Town North Karachi.</p>
+            
+                    <h3 class="blue1"> Phone:</h3>
+                    <p>92:3182775477</p>
+            
+                    <h3 class="blue2"> Email:</h3>
+                    <p>siddiquiibtihaj@gmail.com</p>
+                </div>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+    $('#fadein').click(function(){
+   $('#box1').fadeToggle('slow');
+   $('#box2').fadeToggle('slow');
+   $('#box3').fadeToggle(3000);
+   $('#box4').fadeToggle(2000);
+    });
+    });
+</script>

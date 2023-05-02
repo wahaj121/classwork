@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel,#des{
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+        }
+        #des{
+            margin-top: 5px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="panel">html</div>
+    <div id="des">html stands for hyper text markup language</div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$('#panel').click(function(){
+// $('#des').slideDown();
+$('#des').slideToggle();
+
+});
+// $('#panel').dblclick(function(){
+// $('#des').slideUp();
+
+// });
+
+});
+
+</script>
